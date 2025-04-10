@@ -43,7 +43,6 @@ public class calc extends JFrame implements ActionListener {
             buttonPanel.add(button);
         }
         
-        // Add components to frame
         setLayout(new BorderLayout(5, 5));
         add(display, BorderLayout.NORTH);
         add(buttonPanel, BorderLayout.CENTER);
@@ -92,7 +91,6 @@ public class calc extends JFrame implements ActionListener {
                 break;
                 
             case "(": case ")":
-                // Basic parenthesis support (would need more logic for full functionality)
                 currentInput += command;
                 display.setText(currentInput);
                 break;
